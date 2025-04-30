@@ -8,7 +8,7 @@ import logging
 load_dotenv()
 TMDB_API_KEY = os.getenv("TMDB_API_KEY")
 FILE_NAME = "logs/kafka_producer.log"
-
+URL = "https://api.themoviedb.org/3/discover/movie"
 os.makedirs("logs", exist_ok=True) # creating log directory if it doesn't exist
 
 producer = KafkaProducer(
@@ -27,14 +27,14 @@ logging.basicConfig(
 )
 
 def get_movies_by_year(year, page=1):
-    url = "https://api.themoviedb.org/3/discover/movie"
+    
     params = {
         "api_key": TMDB_API_KEY,
         "primary_release_year": year,
         "page": page
     }
     try:
-        response = requests.get(url, params=params)
+        response = requests.get(URL, params=params)
         response.raise_for_status()
         return response.json()
     except requests.exceptions.HTTPError as e:

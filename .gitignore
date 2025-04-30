@@ -9,3 +9,7 @@ notes.txt
 
 # Ignore test.py file
 test.py
+
+# Ignore all __pycache__ folders and .pyc files
+__pycache__/
+*.pyc

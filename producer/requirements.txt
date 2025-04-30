@@ -1,1 +1,4 @@
 kafka-python
+requests
+python-dotenv
+kafka-python

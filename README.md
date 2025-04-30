@@ -11,5 +11,5 @@ A real-time data pipeline for streaming, transforming, and visualizing movie rat
 - **Airflow** – Workflow orchestration and scheduling
 - **Docker** – Containerized development and deployment
 - **Tableau** – Interactive data visualization and dashboards
-![Kafka Medallion Architecture](https://github.com/your-username/your-repo-name/assets/your-upload-id)
 
+![image](https://github.com/user-attachments/assets/869bcbf7-4c0e-494e-bf99-53850560836a)

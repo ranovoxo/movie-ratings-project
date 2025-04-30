@@ -1,0 +1,11 @@
+# Ignore environment configuration file
+.env
+
+# Ignore logs directory
+logs/
+
+# Ignore notes file
+notes.txt
+
+# Ignore test.py file
+test.py
